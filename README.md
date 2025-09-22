@@ -25,6 +25,19 @@ python time_server.py
 
 Connect to the server from your MCP-compatible client (e.g., LM Studio) using the stdio transport.
 
+```
+{
+  "mcpServers": {
+    "local-time": {
+      "command": "python",
+      "args": [
+        "/path/to/time_server.py"
+      ]
+    }
+  }
+}
+```
+
 ## Tool Reference
 
 `current_time(timezone_name: str | None = None, format: Literal["iso", "locale", "epoch"] = "iso")`
